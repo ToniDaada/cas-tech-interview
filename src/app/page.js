@@ -4,6 +4,8 @@ import Footer from "@/components/Footer";
 import Sidebar from "@/components/Sidebar";
 import ProjectTable from "@/components/ProjectTable";
 import OrderOverview from "@/components/OrderOverview";
+import Dashboard from "@/components/Dashboard";
+import Header from "@/components/Header";
 import { useState } from "react";
 
 export default function Home() {
@@ -17,9 +19,13 @@ export default function Home() {
       {/* Needs Work Done */}
       {/* <Sidebar isOpen={isSideBarOpen} toggleSidebar={toggleSidebar} /> */}
 
+      <Header />
+      <Dashboard />
+
+      <ProjectTable />
       <OrderOverview />
-      {/* <ProjectTable /> */}
-      {/* <Footer /> */}
+
+      <Footer />
     </div>
   );
 }
