@@ -83,8 +83,9 @@ export default function ProjectTable() {
       <div className="items-center mb-6">
         <h3 className="text-xl font-bold text-gray-900 mb-2">Projects</h3>
         <button className="text-gray-600 text-sm  flex items-center text-center">
-          <Image src="/icons/circle.svg" alt="circle" width={15} height={15} />{" "}
-          30 projects done this month
+          <Image src="/icons/circle.svg" alt="circle" width={15} height={15} />
+          {"   "}
+          30 done this month
         </button>
       </div>
 

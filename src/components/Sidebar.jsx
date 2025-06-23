@@ -26,12 +26,7 @@ const accountPages = [
   { name: "Sign Up", icon: UserIcon, href: "/" },
 ];
 
-export default function Sidebar() {
-  const [isOpen, setIsopen] = useState(true);
-  const toggleSidebar = function () {
-    setIsopen(() => !isOpen);
-  };
-
+export default function Sidebar({ isOpen, toggleSidebar }) {
   return (
     <aside
       className={`fixed top-0 left-0 h-full w-64 bg-white shadow-xl transition-transform duration-300 ease-in-out z-40 p-4 flex flex-col
