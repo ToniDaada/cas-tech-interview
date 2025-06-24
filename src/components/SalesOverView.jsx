@@ -64,15 +64,15 @@ const SalesOverView = () => {
               axisLine={false}
               className="text-xs sm:text-sm text-gray-600"
             />
-            {/* Y-Axis for sales values, customized to show relevant range */}
+
             <YAxis
               tickLine={false}
               axisLine={false}
               className="text-xs sm:text-sm text-gray-600"
             />
-            {/* Tooltip to show details on hover */}
+
             <Tooltip />
-            {/* Area for 'Year 2 Sales' (lighter teal color, assumed from screenshot) */}
+
             <Area
               type="monotone"
               dataKey="year2Sales"
@@ -82,7 +82,7 @@ const SalesOverView = () => {
               strokeWidth={2}
               name="Year 2 Sales" // Label for the tooltip
             />
-            {/* Area for 'Year 1 Sales' (darker color, representing 2001 sales) */}
+
             <Area
               type="monotone"
               dataKey="year1Sales"

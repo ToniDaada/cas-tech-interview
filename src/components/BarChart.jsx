@@ -1,4 +1,5 @@
 import React from "react";
+import StatsSummary from "./StatsSummary";
 
 const BarChart = () => {
   const barData = [
@@ -55,6 +56,10 @@ const BarChart = () => {
         </div>
       </div>
 
+      <div>
+        <StatsSummary />
+      </div>
+
       <style jsx>{`
         @keyframes growUp {
           from {
@@ -70,13 +75,6 @@ const BarChart = () => {
           transform-origin: bottom;
         }
       `}</style>
-
-      {/* <div>
-        <h1>Active Users</h1>
-        <p>
-          <span className="text-[#4FD1C5]">(+23%)</span> than last week
-        </p>
-      </div> */}
     </>
   );
 };
