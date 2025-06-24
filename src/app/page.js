@@ -15,7 +15,7 @@ export default function Home() {
   const [isSideBarOpen, setIsSideBarOpen] = useState(true);
 
   const toggleSidebar = function () {
-    setIsSideBarOpen(!isSideBarOpen);
+    setIsSideBarOpen((prev) => !prev);
   };
   return (
     <>
@@ -23,14 +23,12 @@ export default function Home() {
       {/* <style>{globalStyles}</style> */}
       <div className="dashboard-container">
         {/* Sidebar Overlay for Mobile */}
-        {/* <div
-          className={`fixed inset-0 bg-black bg-opacity-50 z-30 lg:hidden ${
-            isSideBarOpen ? "block" : "hidden"
-          }`}
+        <div
+          className={`${isSideBarOpen ? "block" : "hidden"}`}
           onClick={toggleSidebar}
-        ></div> */}
+        ></div>
 
-        {/* <Sidebar isOpen={isSideBarOpen} toggleSidebar={toggleSidebar} /> */}
+        <Sidebar isOpen={isSideBarOpen} toggleSidebar={toggleSidebar} />
 
         <div className="main-content-area">
           <Header toggleSidebar={toggleSidebar} />
@@ -39,7 +37,7 @@ export default function Home() {
 
           <Dashboard />
 
-          <div className="flex flex-wrap gap-6 m-5  ">
+          <div className="flex flex-wrap gap-6 m-5 mb-1  ">
             <div className="w-full md:w-[calc(50%-0.75rem)] ">
               <div className="h-full">
                 <BarChart />
