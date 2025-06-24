@@ -1,5 +1,5 @@
 import React from "react";
-import Image from "next/image";
+
 export default function Dashboard() {
   return (
     <div className="flex flex-wrap gap-6 m-5 mt-6 items-stretch">
@@ -30,23 +30,28 @@ export default function Dashboard() {
       </div>
 
       {/* Right Card */}
-      <div className="w-full md:w-[calc(50%-0.75rem)] relative rounded-xl overflow-hidden shadow min-h-[250px]">
-        <Image
-          src="/team-image.jpg"
+      <div className="w-full md:w-[calc(50%-0.75rem)] relative rounded-xl overflow-hidden shadow min-h-[250px] group cursor-pointer">
+        <img
+          src="/background.jpg"
           alt="Team Working"
-          fill
-          className="object-cover rounded-xl"
-          sizes="100vw"
+          className="absolute inset-0 w-full h-full object-cover rounded-xl
+                     transition-transform duration-500 group-hover:scale-105" // Animation on hover
         />
-        <div className="absolute inset-0 bg-black bg-opacity-40 p-6 flex flex-col justify-end text-white rounded-xl">
-          <h2 className="text-lg font-semibold">Work with the Rockets</h2>
-          <p className="text-sm text-gray-200 mt-2">
-            Wealth creation is an evolutionarily recent positive-sum game. It is
-            all about who takes the opportunity first.
-          </p>
+        <div className="absolute inset-0  bg-opacity-40 p-6 flex flex-col text-white rounded-xl">
+          {" "}
+          {/* Removed justify-end */}
+          {/* Title and paragraph at the top */}
+          <div>
+            <h2 className="text-lg font-semibold">Work with the Rockets</h2>
+            <p className="text-sm text-gray-200 mt-2">
+              Wealth creation is an evolutionarily recent positive-sum game. It
+              is all about who takes the opportunity first.
+            </p>
+          </div>
+          {/* Read more link pushed to the bottom */}
           <a
             href="#"
-            className="mt-3 inline-block text-sm font-medium text-white underline"
+            className="mt-auto inline-block text-sm font-medium text-white underline" // Added mt-auto
           >
             Read more →
           </a>
