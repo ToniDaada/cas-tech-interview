@@ -8,7 +8,6 @@ import {
   Tooltip,
   ResponsiveContainer,
 } from "recharts";
-import BarChart from "./BarChart";
 
 // Sample data for the sales overview chart, approximating the visual in the screenshot.
 // 'name' represents the month, 'year1Sales' is for the darker area, and 'year2Sales' for the teal area.

@@ -1,6 +1,4 @@
 import React from "react";
-// Removed import Image from "next/image"; as it's causing the error.
-// Using standard <img> tag instead for broader compatibility.
 
 const data = [
   {
@@ -56,6 +54,7 @@ export default function StatsSummary() {
                     width={15}
                     height={15}
                     className="w-[15px] h-[15px] object-contain"
+                    loading="lazy"
                   />
                 </div>
                 <p className="text-sm text-gray-500">{item.title}</p>

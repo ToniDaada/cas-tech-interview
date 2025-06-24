@@ -25,6 +25,7 @@ export default function Dashboard() {
             src="/chakra.svg"
             alt="Chakra Logo"
             className="w-full h-auto animate-pulse"
+            loading="lazy"
           />
         </div>
       </div>
@@ -36,6 +37,7 @@ export default function Dashboard() {
           alt="Team Working"
           className="absolute inset-0 w-full h-full object-cover rounded-xl
                      transition-transform duration-500 group-hover:scale-105" // Animation on hover
+          loading="lazy"
         />
         <div className="absolute inset-0  bg-opacity-40 p-6 flex flex-col text-white rounded-xl">
           {" "}
