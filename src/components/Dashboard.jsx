@@ -1,56 +1,57 @@
-import React from "react";
+// app/components/Dashboard.jsx (or wherever your components live)
+import Image from "next/image";
 
-const IRocketsPlaceholderImage =
-  "https://placehold.co/600x400/3498db/ffffff?text=Team+Work";
-
-const Dashboard = () => {
+export default function Dashboard() {
   return (
-    // Main container for the two cards, centered and responsive
-    <div className="min-h-screen bg-gray-50 flex items-center justify-center p-4 sm:p-6 lg:p-8">
-      <div className="grid grid-cols-3 lg:flex-row gap-6 w-full max-w-6xl">
-        {/* Card 1: Purity UI Dashboard */}
-        <div className="flex-1 bg-white rounded-xl shadow-lg overflow-hidden flex flex-col lg:flex-row relative">
-          {/* Text content area */}
-          <div className="p-6 sm:p-8 flex flex-col justify-between flex-grow">
-            <div>
-              <p className="text-xs  text-gray-500  mb-1">
-                Built by developers
-              </p>
-              <h2 className="text-xl sm:text-2xl font-bold text-gray-800 mb-2">
-                Purity UI Dashboard
-              </h2>
-              <p className="text-sm sm:text-base text-gray-600  mb-6">
-                From colors, cards, typography to complex elements, you will
-                find the full documentation.
-              </p>
-            </div>
-            <a
-              href="#"
-              className="inline-flex items-center font-semibold text-sm transition-colors duration-200"
-            >
-              Read more
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-4 w-4 ml-2"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                strokeWidth="2"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M17 8l4 4m0 0l-4 4m4-4H3"
-                />
-              </svg>
-            </a>
-          </div>
+    <div className="flex flex-wrap gap-6 m-5 mt-6 items-stretch">
+      {/* Left Card */}
+      <div className="w-full md:w-[calc(50%-0.75rem)] bg-white rounded-xl shadow p-6 flex justify-between items-center">
+        <div>
+          <p className="text-sm text-gray-500 mb-1">Built by Developers</p>
+          <h2 className="text-lg font-semibold">Purity UI Dashboard</h2>
+          <p className="text-sm text-gray-500 mt-2">
+            From simple cards, typography to complex elements, you will find the
+            full documentation.
+          </p>
+          <a
+            href="#"
+            className="mt-3 inline-block text-sm font-medium text-blue-500 hover:underline"
+          >
+            Read more →
+          </a>
+        </div>
+        <Image
+          src="/chakra-logo.png" // ensure this is placed in /public/
+          alt="Chakra Logo"
+          width={100}
+          height={100}
+          className="rounded-lg"
+        />
+      </div>
 
-          {/* Chakra UI logo/box on the right (or bottom on small screens) */}
+      {/* Right Card */}
+      <div className="w-full md:w-[calc(50%-0.75rem)] relative rounded-xl overflow-hidden shadow">
+        <Image
+          src="/team-image.jpg" // place a relevant image in /public/
+          alt="Team Working"
+          layout="fill"
+          objectFit="cover"
+          className="rounded-xl"
+        />
+        <div className="absolute inset-0 bg-black bg-opacity-40 p-6 flex flex-col justify-end text-white rounded-xl">
+          <h2 className="text-lg font-semibold">Work with the Rockets</h2>
+          <p className="text-sm text-gray-200 mt-2">
+            Wealth creation is an evolutionarily recent positive-sum game. It is
+            all about who takes the opportunity first.
+          </p>
+          <a
+            href="#"
+            className="mt-3 inline-block text-sm font-medium text-white underline"
+          >
+            Read more →
+          </a>
         </div>
       </div>
     </div>
   );
-};
-
-export default Dashboard;
+}

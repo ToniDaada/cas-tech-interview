@@ -41,7 +41,7 @@ export default function OrdersOverview() {
   ];
 
   const OrderItem = ({ title, time, icon }) => (
-    <div className="flex items-start mb-4 ">
+    <div className="flex items-start mb-4 h-full ">
       <div
         className={`w-3 h-2 rounded-full mr-2 
     

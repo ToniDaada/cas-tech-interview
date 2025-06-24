@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const Header = () => {
   return (
-    <header className="flex items-center justify-between p-6 bg-white  rounded-xl mx-6 mt-6">
+    <header className="flex items-center justify-between p-3 bg-white  rounded-xl mx-6 mt-1">
       {/* Left Section: Pages / Dashboard */}
       <div className="flex flex-col">
         <h2 className="text-sm  text-gray-800 inline">
