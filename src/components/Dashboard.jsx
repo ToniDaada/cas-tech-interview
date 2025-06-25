@@ -28,7 +28,7 @@ export default function Dashboard() {
           </a>
         </div>
         {/* Image Section */}
-        <div className="ml-4 flex-shrink-0 w-28  md:w-44">
+        <div className="ml-4 flex-shrink-0 md:w-44">
           <Image
             src="/chakra.svg"
             alt="Chakra Logo"
