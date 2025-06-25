@@ -9,8 +9,6 @@ import {
   ResponsiveContainer,
 } from "recharts";
 
-// Sample data for the sales overview chart, approximating the visual in the screenshot.
-// 'name' represents the month, 'year1Sales' is for the darker area, and 'year2Sales' for the teal area.
 const data = [
   { name: "Jan", year1Sales: 500, year2Sales: 180 },
   { name: "Feb", year1Sales: 150, year2Sales: 220 },

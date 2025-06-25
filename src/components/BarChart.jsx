@@ -1,6 +1,7 @@
 import React from "react";
 import StatsSummary from "./StatsSummary";
 
+// Bar Chart Values
 const BarChart = () => {
   const barData = [
     { value: 150, label: "0" },
@@ -60,6 +61,7 @@ const BarChart = () => {
         <StatsSummary />
       </div>
 
+      {/* Custom style animation I created  */}
       <style jsx>{`
         @keyframes growUp {
           from {

@@ -41,7 +41,7 @@ export default function Home() {
           {/* Main Content Area */}
           <div
             className={`flex-1 transition-all duration-300 ease-in-out
-                      ${isSideBarOpen ? "ml-64" : "ml-0"}`} // Dynamic margin based on sidebar state
+                      ${isSideBarOpen ? "ml-64" : "ml-0"}`}
           >
             {/* Header */}
             <div className="main-content-area  w-full z-999">

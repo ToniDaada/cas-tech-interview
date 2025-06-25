@@ -62,12 +62,12 @@ export default function StatsSummary() {
               <h3 className="text-xl font-semibold text-gray-800 mt-1  w-[100%]">
                 {item.text}
               </h3>
-              {/* Progress bar track (white backdrop) and fill (teal) */}
+              {/* Progress bar track  */}
               <div className="w-full h-1 bg-gray-200 rounded mt-2">
                 {" "}
                 {/* White/light gray backdrop */}
                 <div
-                  className="h-full bg-[#4FD1C5] rounded animate-grow-bar" // Teal fill color for the progress
+                  className="h-full bg-[#4FD1C5] rounded animate-grow-bar" //  fill color for the progress like to show the progress
                   style={{ width: `${item.percentage}%` }}
                 />
               </div>
@@ -76,6 +76,7 @@ export default function StatsSummary() {
         </div>
       </div>
 
+      {/* CUSTOM JSX AGAIN */}
       <style jsx>{`
         @keyframes scale-grow {
           from {

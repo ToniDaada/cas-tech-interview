@@ -1,10 +1,8 @@
 "use client";
-
 import React from "react";
 import { useState } from "react";
 import Image from "next/image";
 const Header = ({ toggleSidebar }) => {
-  // Now accepts toggleSidebar prop
   const [query, setQuery] = useState("");
   const [showSearchInput, setShowSearchInput] = useState(false); // State for mobile search input visibility
 
@@ -20,7 +18,7 @@ const Header = ({ toggleSidebar }) => {
 
   return (
     <header className="sticky top-0 z-20 flex items-center justify-between p-2.5 bg-white rounded-xs mx-6 shadow-sm">
-      {/* Left Section: Pages / Dashboard - Hidden when search is active on mobile */}
+      {/* Left Section: Hidden when search is active on mobile */}
       <div
         className={`flex flex-col ${
           showSearchInput ? "hidden" : "flex"
@@ -36,7 +34,7 @@ const Header = ({ toggleSidebar }) => {
         <h2 className="text-base font-bold text-gray-800">Dashboard</h2>
       </div>
 
-      {/* Right Section: Mobile vs Desktop Views */}
+      {/* Right Section */}
       <div
         className={`flex items-center space-x-3 ${
           showSearchInput ? "flex-grow justify-end" : ""

@@ -160,6 +160,7 @@ export default function ProjectTable() {
         </div>
       </div>
 
+      {/* Custom JSX for the animation */}
       <style jsx>{`
         @keyframes scale-grow {
           from {

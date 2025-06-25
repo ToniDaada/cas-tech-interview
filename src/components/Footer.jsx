@@ -1,6 +1,4 @@
-// components/Footer.jsx
 import React from "react";
-// Removed: import Link from 'next/link';
 
 const textColor = "text-[#4FD1C5]";
 
