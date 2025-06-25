@@ -5,13 +5,19 @@ export default function Dashboard() {
     <div className="flex flex-wrap gap-6 m-5 mt-6 items-stretch">
       {/* Left Card */}
       <div className="w-full md:w-[calc(50%-0.75rem)] bg-white rounded-xl shadow p-6 sm:flex justify-between items-center">
-        <div className="flex-1">
-          <p className="text-sm text-gray-500 mb-1">Built by Developers</p>
-          <h2 className="text-lg font-semibold">Purity UI Dashboard</h2>
-          <p className="text-sm text-gray-500 mt-2">
-            From simple cards, typography to complex elements, you will find the
-            full documentation.
-          </p>
+        <div className="flex-1 flex flex-col h-full">
+          {" "}
+          {/* Added flex flex-col h-full */}
+          <div>
+            {" "}
+            {/* Group top content together */}
+            <p className="text-sm text-gray-500 mb-1">Built by Developers</p>
+            <h2 className="text-lg font-semibold">Purity UI Dashboard</h2>
+            <p className="text-sm text-gray-500 mt-2">
+              From simple cards, typography to complex elements, you will find
+              the full documentation.
+            </p>
+          </div>
           <a
             href="#"
             className="mt-auto inline-block text-sm font-medium text-black-500 hover:underline"
