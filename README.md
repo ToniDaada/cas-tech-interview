@@ -14,7 +14,7 @@ Responsive Design: Optimized for various screen sizes, from mobile to desktop.
 
 Dynamic Sidebar:
 
-Press the dashboard text to toggle the sidebar (Desktop)
+<strong>Press the dashboard text to toggle the sidebar (Desktop)</strong>
 
 Toggable via hamburger menu (mobile).
 
@@ -52,7 +52,7 @@ This project is deployed using Netlify, providing continuous integration and dep
 <img src="/public/Screenshot (9).png">
 <img src="/public/Screenshot (7).png">
 
-<h1>DESKTOP VIEW</h1>
+<h1>MOBILE VIEW</h1>
 <img src="/public/mobile1.jpg">
 <img src="/public/mobile2.jpg">
 <img src="/public/mobile3.jpg">
