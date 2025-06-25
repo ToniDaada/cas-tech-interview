@@ -35,7 +35,7 @@ export default function Home() {
             ></div>
           )}
 
-          {/* Sidebar Component (now inline) */}
+          {/* Sidebar Component */}
           <Sidebar isOpen={isSideBarOpen} toggleSidebar={toggleSidebar} />
 
           {/* Main Content Area */}
