@@ -4,9 +4,11 @@ export default function Dashboard() {
   return (
     <div className="flex flex-wrap gap-6 m-5 mt-6 items-stretch">
       {/* Left Card */}
-      <div className="w-full md:w-[calc(50%-0.75rem)] bg-white rounded-xl shadow p-6 sm:flex justify-between items-center">
+      <div className="w-full md:w-[calc(50%-0.75rem)] bg-white rounded-xl shadow p-6 md:flex justify-between items-center">
+        {" "}
+        {/* Changed sm:flex to md:flex */}
         {/* Flex container for text content: flex-col to stack items vertically, h-full to take full height */}
-        <div className=" md:flex-1 md:flex md:flex-col h-full">
+        <div className="flex-1 flex flex-col h-full">
           <div>
             {" "}
             {/* Group top content together to push 'Read more' down */}
@@ -25,7 +27,6 @@ export default function Dashboard() {
             Read more →
           </a>
         </div>
-
         {/* Image Section */}
         <div className="ml-4 flex-shrink-0 w-28 sm:w-36 md:w-44">
           <img
@@ -36,7 +37,6 @@ export default function Dashboard() {
           />
         </div>
       </div>
-
       {/* Right Card */}
       <div className="w-full md:w-[calc(50%-0.75rem)] relative rounded-xl overflow-hidden shadow min-h-[250px] group cursor-pointer">
         <img
