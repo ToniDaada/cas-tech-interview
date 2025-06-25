@@ -13,7 +13,7 @@ import StatsCards from "@/components/StatsCard";
 import LazyLoadSection from "@/components/LazyLoadSection";
 
 export default function Home() {
-  const [isSideBarOpen, setIsSideBarOpen] = useState(true); // Start with sidebar open
+  const [isSideBarOpen, setIsSideBarOpen] = useState(true); // I am starting with sidebar open
 
   const toggleSidebar = () => {
     setIsSideBarOpen((prev) => !prev);
@@ -26,7 +26,11 @@ export default function Home() {
           {/* Sidebar Overlay for Mobile */}
           {isSideBarOpen && (
             <div
-              className="fixed inset-0 bg-black bg-opacity-50 z-30 lg:hidden"
+              className="fixed inset-0
+                          bg-[rgba(0, 0, 0, 0.4)]
+  backdrop-blur-xl z-[40]
+  transition-all duration-[4000]
+              lg:hidden"
               onClick={toggleSidebar}
             ></div>
           )}
@@ -40,7 +44,7 @@ export default function Home() {
                       ${isSideBarOpen ? "ml-64" : "ml-0"}`} // Dynamic margin based on sidebar state
           >
             {/* Header */}
-            <div className="main-content-area">
+            <div className="main-content-area  w-full z-999">
               <Header toggleSidebar={toggleSidebar} />
             </div>
 

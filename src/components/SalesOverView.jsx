@@ -28,9 +28,9 @@ const data = [
 
 const SalesOverView = () => {
   return (
-    <div className="flex justify-center items-center min-h-screen bg-gray-50 p-4 font-inter">
+    <div className="flex justify-center items-center min-h-screen bg-gray-50 p-4 font-inter   ">
       {/* Card-like container for the chart */}
-      <div className="bg-white rounded-lg shadow-xl p-6 w-full max-w-4xl">
+      <div className="bg-white rounded-lg shadow-xl p-6 w-full max-w-4xl  transition-transform duration-300 hover:scale-[1.1]">
         {/* Chart Header */}
         <div className="mb-6">
           <h2 className="text-xl md:text-2xl font-bold text-gray-800">

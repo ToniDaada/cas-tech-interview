@@ -14,7 +14,7 @@ export default function Dashboard() {
           </p>
           <a
             href="#"
-            className="mt-3 inline-block text-sm font-medium text-blue-500 hover:underline"
+            className="mt-3 inline-block text-sm font-medium text-black-500 hover:underline"
           >
             Read more →
           </a>

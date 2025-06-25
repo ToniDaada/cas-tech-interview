@@ -2,13 +2,13 @@ import React from "react";
 
 const data = [
   {
-    icon: "/statsicons/cart.svg",
+    icon: "/statsicons/wallet.svg",
     title: "Users",
     text: "32,984",
     percentage: 60,
   },
   {
-    icon: "/statsicons/cart.svg",
+    icon: "/rocket.svg",
     title: "Clicks",
     text: "2,42m",
     percentage: 80,
@@ -20,7 +20,7 @@ const data = [
     percentage: 20,
   },
   {
-    icon: "/statsicons/cart.svg",
+    icon: "/statsicons/build.svg",
     title: "Item",
     text: "320",
     percentage: 55,
@@ -43,7 +43,7 @@ export default function StatsSummary() {
           {data.map((item, index) => (
             <div
               key={index}
-              className={`flex flex-col items-center animate-fade-in-up`}
+              className={`flex flex-col items-center animate-fade-in-up  transition-transform duration-300 hover:scale-[1.2]`}
               style={{ animationDelay: `${100 * index}ms` }}
             >
               <div className="flex items-center  w-[100%] ">
@@ -53,7 +53,7 @@ export default function StatsSummary() {
                     alt={item.title}
                     width={15}
                     height={15}
-                    className="w-[15px] h-[15px] object-contain"
+                    className="w-[15px] h-[15px] object-contain "
                     loading="lazy"
                   />
                 </div>

@@ -20,7 +20,7 @@ const BarChart = () => {
 
   return (
     <>
-      <div className="bg-gradient-to-br from-[#313860] to-[#151928] p-6 rounded-xl shadow-md w-full h-80 flex flex-col justify-between">
+      <div className="bg-gradient-to-br from-[#313860] to-[#151928] p-6  rounded-xl shadow-md w-full h-80 flex flex-col justify-between  transition-transform duration-300 hover:scale-[1.01]">
         <div className="flex justify-between items-start mb-4">
           <h3 className="text-white text-lg font-semibold">Active Users</h3>
           <p className="text-gray-300 text-sm flex items-center">

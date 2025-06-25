@@ -40,29 +40,29 @@ export default function OrdersOverview() {
     },
   ];
 
-  const OrderItem = ({ title, time, icon }) => (
-    <div className="flex items-start mb-4 h-full ">
-      <div
-        className={`w-3 h-2 rounded-full mr-2 
-    
-        `}
-      >
-        <Image src={icon} alt={title} width={15} height={15} className="" />
-      </div>
-      <div className="flex-grow">
-        <h4
-          className={`text-gray-900
-          `}
-        >
-          {title}
-        </h4>
-        <p className="text-xs text-gray-400">{time}</p>
-      </div>
-    </div>
-  );
+  // const OrderItem = ({ title, time, icon }) => (
+  //   <div className="flex items-start mb-4 h-full ">
+  //     <div
+  //       className={`w-3 h-2 rounded-full mr-2
+
+  //       `}
+  //     >
+  //       <Image src={icon} alt={title} width={15} height={15} className="transition-transform duration-300 hover:scale-[1.03]" />
+  //     </div>
+  //     <div className="flex-grow">
+  //       <h4
+  //         className={`text-gray-900
+  //         `}
+  //       >
+  //         {title}
+  //       </h4>
+  //       <p className="text-xs text-gray-400">{time}</p>
+  //     </div>
+  //   </div>
+  // );
 
   return (
-    <div className="bg-white p-6 rounded-xl shadow-md font-sans">
+    <div className="bg-white p-6 rounded-xl shadow-md font-sans  transition-transform duration-300 hover:scale-[1.03]">
       <h3 className="text-xl font-bold text-gray-900 mb-1">Orders overview</h3>
       <p className="text-sm text-gray-500 flex items-center mb-6">
         <ArrowUpIcon className="w-4 h-4 text-green-500 mr-1" />
@@ -89,7 +89,7 @@ export default function OrdersOverview() {
                 alt=""
                 width={15}
                 height={15}
-                className="object-contain mb-2"
+                className="object-contain mb-2 "
               />
             </div>
 

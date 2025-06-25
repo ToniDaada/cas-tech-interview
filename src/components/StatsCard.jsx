@@ -37,12 +37,12 @@ const stats = [
 
 export default function StatsCards() {
   return (
-    <section className="bg-white rounded-xl p-6 shadow-md w-full mb-6">
+    <section className="bg-white rounded-xl p-6 shadow-md w-[99%] mb-6 m-auto">
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
         {stats.map((stat, index) => (
           <div
             key={index}
-            className="bg-gray-50 p-4 rounded-xl shadow-sm hover:shadow-md transition"
+            className="bg-gray-50 p-4 rounded-xl shadow-sm hover:shadow-md transition-transform duration-300 hover:scale-[1.1]"
           >
             <div className="flex justify-between items-center">
               <div className="">
