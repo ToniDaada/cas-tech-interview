@@ -24,7 +24,7 @@ export default function Home() {
       <LazyLoadSection>
         <div className="flex min-h-screen bg-gray-100 font-inter">
           {/* Sidebar Overlay for Mobile */}
-          {isSideBarOpen && (
+          {!isSideBarOpen && (
             <div
               className="fixed inset-0
                           bg-[rgba(0, 0, 0, 0.4)]
