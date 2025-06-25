@@ -34,10 +34,8 @@ export default function Sidebar({ isOpen, toggleSidebar }) {
     >
       <div className="pb-3 border-b border-gray-200 flex items-center justify-between">
         {" "}
-        {/* Adjusted padding */}
         <h1 className="text-sm font-bold text-gray-900 flex">
           {" "}
-          {/* Smaller text size */}
           <Image
             src="/favicon.svg"
             alt="logo"
@@ -50,7 +48,7 @@ export default function Sidebar({ isOpen, toggleSidebar }) {
         {/* Toggle button inside sidebar */}
         <button
           onClick={toggleSidebar}
-          className="p-1 rounded-full transition-colors duration-200 hover:bg-gray-100 lg:hidden " // Smaller padding
+          className="p-1 rounded-full transition-colors duration-200 hover:bg-gray-100 lg:hidden "
           aria-label="Close sidebar"
         >
           <svg
