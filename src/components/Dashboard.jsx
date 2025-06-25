@@ -6,7 +6,7 @@ export default function Dashboard() {
       {/* Left Card */}
       <div className="w-full md:w-[calc(50%-0.75rem)] bg-white rounded-xl shadow p-6 sm:flex justify-between items-center">
         {/* Flex container for text content: flex-col to stack items vertically, h-full to take full height */}
-        <div className="flex-1 flex flex-col h-full">
+        <div className=" md:flex-1 md:flex md:flex-col h-full">
           <div>
             {" "}
             {/* Group top content together to push 'Read more' down */}
