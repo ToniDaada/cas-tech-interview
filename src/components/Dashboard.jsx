@@ -19,7 +19,7 @@ export default function Dashboard() {
               the full documentation.
             </p>
           </div>
-          <div className=" w-[100]% flex-shrink-0  md:hidden">
+          <div className="hidden w-[100]% flex-shrink-0  md:hidden">
             <Image
               src="/chakra.svg"
               alt="Chakra Logo"
