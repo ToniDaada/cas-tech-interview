@@ -14,7 +14,7 @@ export default function Dashboard() {
           </p>
           <a
             href="#"
-            className="mt-3 inline-block text-sm font-medium text-black-500 hover:underline"
+            className="mt-auto inline-block text-sm font-medium text-black-500 hover:underline"
           >
             Read more →
           </a>
@@ -36,13 +36,11 @@ export default function Dashboard() {
           src="/background.jpg"
           alt="Team Working"
           className="absolute inset-0 w-full h-full object-cover rounded-xl
-                     transition-transform duration-500 group-hover:scale-105" // Animation on hover
+                     transition-transform duration-500 group-hover:scale-105"
           loading="lazy"
         />
         <div className="absolute inset-0  bg-opacity-40 p-6 flex flex-col text-white rounded-xl">
           {" "}
-          {/* Removed justify-end */}
-          {/* Title and paragraph at the top */}
           <div>
             <h2 className="text-lg font-semibold">Work with the Rockets</h2>
             <p className="text-sm text-gray-200 mt-2">
@@ -50,10 +48,9 @@ export default function Dashboard() {
               is all about who takes the opportunity first.
             </p>
           </div>
-          {/* Read more link pushed to the bottom */}
           <a
             href="#"
-            className="mt-auto inline-block text-sm font-medium text-white underline" // Added mt-auto
+            className="mt-auto inline-block text-sm font-medium text-white underline"
           >
             Read more →
           </a>
