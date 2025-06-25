@@ -1,8 +1,13 @@
+<h1>
 Purity UI Dashboard
+</h1>
 
 <br/>
+<p>
 
 A responsive and modern dashboard UI built with React and Tailwind CSS, inspired by the Purity UI design. This project features a dynamic sidebar, lazy-loaded content sections, and a responsive header with a mobile-friendly search experience.
+
+</p>
 
 FEATURES
 Responsive Design: Optimized for various screen sizes, from mobile to desktop.
@@ -41,4 +46,13 @@ Modular Component Structure: Organized into reusable React components for mainta
 Deployment
 This project is deployed using Netlify, providing continuous integration and deployment.
 
+<h1>DESKTOP VIEW</h1>
 <img src="/public/Screenshot (7).png">
+<img src="/public/Screenshot (8).png">
+<img src="/public/Screenshot (9).png">
+<img src="/public/Screenshot (7).png">
+
+<h1>DESKTOP VIEW</h1>
+<img src="/public/mobile1.jpg">
+<img src="/public/mobile2.jpg">
+<img src="/public/mobile3.jpg">
