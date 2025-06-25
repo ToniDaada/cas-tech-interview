@@ -9,7 +9,7 @@ export default function Dashboard() {
         {" "}
         {/* Changed sm:flex to md:flex */}
         {/* Flex container for text content: flex-col to stack items vertically, h-full to take full height */}
-        <div className="flex-1 flex flex-col h-full">
+        <div className="flex-1 flex flex-col h-full ">
           <div>
             {" "}
             <p className="text-sm text-gray-500 mb-1">Built by Developers</p>
@@ -18,6 +18,15 @@ export default function Dashboard() {
               From simple cards, typography to complex elements, you will find
               the full documentation.
             </p>
+          </div>
+          <div className=" w-[100]% flex-shrink-0  md:hidden">
+            <Image
+              src="/chakra.svg"
+              alt="Chakra Logo"
+              className="w-full h-auto animate-pulse"
+              width={20}
+              height={20}
+            />
           </div>
 
           <a
@@ -28,7 +37,7 @@ export default function Dashboard() {
           </a>
         </div>
         {/* Image Section */}
-        <div className="ml-4 flex-shrink-0 md:w-44">
+        <div className="hidden ml-4 flex-shrink-0  md:w-44 md:block">
           <Image
             src="/chakra.svg"
             alt="Chakra Logo"
