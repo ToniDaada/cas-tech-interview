@@ -32,7 +32,7 @@ const SalesOverView = () => {
       {/* Card-like container for the chart */}
       <div className="bg-white rounded-lg shadow-xl p-6 w-full max-w-4xl  transition-transform duration-300 hover:scale-[1.1]">
         {/* Chart Header */}
-        <div className="mb-6">
+        <div className="">
           <h2 className="text-xl md:text-2xl font-bold text-gray-800">
             Sales overview
           </h2>
