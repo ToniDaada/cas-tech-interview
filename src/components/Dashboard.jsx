@@ -5,12 +5,11 @@ export default function Dashboard() {
     <div className="flex flex-wrap gap-6 m-5 mt-6 items-stretch">
       {/* Left Card */}
       <div className="w-full md:w-[calc(50%-0.75rem)] bg-white rounded-xl shadow p-6 sm:flex justify-between items-center">
+        {/* Flex container for text content: flex-col to stack items vertically, h-full to take full height */}
         <div className="flex-1 flex flex-col h-full">
-          {" "}
-          {/* Added flex flex-col h-full */}
           <div>
             {" "}
-            {/* Group top content together */}
+            {/* Group top content together to push 'Read more' down */}
             <p className="text-sm text-gray-500 mb-1">Built by Developers</p>
             <h2 className="text-lg font-semibold">Purity UI Dashboard</h2>
             <p className="text-sm text-gray-500 mt-2">
@@ -18,6 +17,7 @@ export default function Dashboard() {
               the full documentation.
             </p>
           </div>
+          {/* 'Read more' link pushed to the bottom using mt-auto */}
           <a
             href="#"
             className="mt-auto inline-block text-sm font-medium text-black-500 hover:underline"
@@ -26,9 +26,10 @@ export default function Dashboard() {
           </a>
         </div>
 
+        {/* Image Section */}
         <div className="ml-4 flex-shrink-0 w-28 sm:w-36 md:w-44">
           <img
-            src="/chakra.svg"
+            src="https://placehold.co/150x150/ffffff/000000?text=Chakra" // Placeholder for /chakra.svg
             alt="Chakra Logo"
             className="w-full h-auto animate-pulse"
             loading="lazy"
