@@ -50,7 +50,6 @@ This project is deployed using Netlify, providing continuous integration and dep
 <img src="/public/Screenshot (7).png">
 <img src="/public/Screenshot (8).png">
 <img src="/public/Screenshot (9).png">
-<img src="/public/Screenshot (7).png">
 
 <h1>MOBILE VIEW</h1>
 <img src="/public/mobile1.jpg">
