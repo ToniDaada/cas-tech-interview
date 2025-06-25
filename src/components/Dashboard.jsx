@@ -12,7 +12,6 @@ export default function Dashboard() {
         <div className="flex-1 flex flex-col h-full">
           <div>
             {" "}
-            {/* Group top content together to push 'Read more' down */}
             <p className="text-sm text-gray-500 mb-1">Built by Developers</p>
             <h2 className="text-lg font-semibold">Purity UI Dashboard</h2>
             <p className="text-sm text-gray-500 mt-2">
@@ -20,7 +19,7 @@ export default function Dashboard() {
               the full documentation.
             </p>
           </div>
-          {/* 'Read more' link pushed to the bottom using mt-auto */}
+
           <a
             href="#"
             className="mt-auto inline-block text-sm font-medium text-black-500 hover:underline"
@@ -29,9 +28,9 @@ export default function Dashboard() {
           </a>
         </div>
         {/* Image Section */}
-        <div className="ml-4 flex-shrink-0 w-28 sm:w-36 md:w-44">
+        <div className="ml-4 flex-shrink-0 w-28  md:w-44">
           <Image
-            src="/chakra.svg" // Placeholder for /chakra.svg
+            src="/chakra.svg"
             alt="Chakra Logo"
             className="w-full h-auto animate-pulse"
             width={20}
