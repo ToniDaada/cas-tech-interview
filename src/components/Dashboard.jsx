@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 export default function Dashboard() {
   return (
@@ -29,11 +30,12 @@ export default function Dashboard() {
         </div>
         {/* Image Section */}
         <div className="ml-4 flex-shrink-0 w-28 sm:w-36 md:w-44">
-          <img
-            src="https://placehold.co/150x150/ffffff/000000?text=Chakra" // Placeholder for /chakra.svg
+          <Image
+            src="/chakra.svg" // Placeholder for /chakra.svg
             alt="Chakra Logo"
             className="w-full h-auto animate-pulse"
-            loading="lazy"
+            width={20}
+            height={20}
           />
         </div>
       </div>
