@@ -60,7 +60,7 @@ export default function Home() {
                     <BarChart />
                   </div>
                 </div>
-                <div className="w-full md:w-[calc(50%-0.75rem)]  h-full">
+                <div className="w-full md:w-[calc(50%-0.75rem)]  h-full mt-5">
                   <div className="h-full">
                     <SalesOverview />
                   </div>
