@@ -33,7 +33,7 @@ const BarChart = () => {
 
         <div className="relative flex-grow flex items-end pb-4 pl-8 pr-4">
           <div className="absolute left-0 top-0 bottom-0 flex flex-col justify-between text-gray-400 text-xs py-2">
-            {[0, 100, 200, 300, 400].map((val, index) => (
+            {[400, 300, 200, 100, 0].map((val, index) => (
               <span key={index} className="text-right pr-2">
                 {val}
               </span>
